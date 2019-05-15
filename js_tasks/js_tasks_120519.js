@@ -32,9 +32,11 @@ findLongestWordLength("The quick brown fox jumped over the lazy dog");
  console.log(---------.reduce()---------);
 
   function findLongestWordLength(str) {
-  let strSplit = str.split(' ');
-  let longestWord = strSplit.reduce(function(longest, current){
-    return current.length > longest.length ? current : longest;
-      }, "");
-    return longestWord.length;
+	  let strSplit = str.split(' ');  // строку в массив, чтобы сортировать
+	  let longestWord = strSplit.reduce(function(longest, current) {
+	    return current.length > longest.length ? current : longest;
+	      }, "");
+// с помощью reduce = задаем 2 значения = longest, current.
+// Если длинна текущего слова больше длинны большего слова, верни текущее, а потом большее
+	    return longestWord.length;
 }

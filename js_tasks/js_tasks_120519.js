@@ -22,6 +22,19 @@ findLongestWordLength("The quick brown fox jumped over the lazy dog");
 
   function findLongestWordLength(str) {
   	let strSplit = str.split(' '); // строку в массив, чтобы сортировать
-  	let strSplitToSort = strSplit.sort(function(a, b){return b.length - a.length});
-  	return strSplitToSort[0].length;
+  	let strSplitToSort = strSplit.sort(function(a, b){return b.length - a.length}); // сортируем массив, от 2 отнимает первое
+  	return strSplitToSort[0].length; // возвращаем длинну нулевого елемента (6), если strSplitToSort[1].length = вернется 5
   }
+
+  findLongestWordLength("The quick brown fox jumped over the lazy dog");
+
+
+ console.log(---------.reduce()---------);
+
+  function findLongestWordLength(str) {
+  let strSplit = str.split(' ');
+  let longestWord = strSplit.reduce(function(longest, current){
+    return current.length > longest.length ? current : longest;
+      }, "");
+    return longestWord.length;
+}

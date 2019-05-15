@@ -40,3 +40,5 @@ findLongestWordLength("The quick brown fox jumped over the lazy dog");
 // Если длинна текущего слова больше длинны большего слова, верни текущее, а потом большее
 	    return longestWord.length;
 }
+
+ console.log(---------https://www.internet-technologies.ru/articles/tri-sposoba-nayti-samoe-dlinnoe-slovo-v-stroke-javascript.html---------);

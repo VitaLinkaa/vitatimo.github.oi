@@ -1,0 +1,54 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+}
+
+.matrix_1 {
+	display: grid;
+	grid-template-rows: repeat(2,100px);
+	grid-template-columns: repeat(2,100px);
+	justify-content: center;
+	grid-gap: 1vw;
+	margin-bottom: 20px;
+}
+
+
+.matrix_2 {
+	display: grid;
+	grid-template-rows: repeat(3,100px);
+	grid-template-columns: repeat(3,100px);
+	justify-content: center;
+	grid-gap: 1vw;
+	margin-bottom: 20px;
+}
+
+.matrix_3 {
+	display: grid;
+	grid-template-rows: repeat(4,100px);
+	grid-template-columns: repeat(4,100px);
+	justify-content: center;
+	grid-gap: 1vw;
+	margin-bottom: 20px;
+}
+
+
+.item_matrix_1 {
+	background: rosybrown;
+}
+
+.item_matrix_2 {
+	background: sandybrown;
+}
+
+.item_matrix_3 {
+	background: darkkhaki;
+}
+
+.item_matrix_1,
+.item_matrix_2,
+.item_matrix_3 {
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+
+}

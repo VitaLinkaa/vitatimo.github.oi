@@ -12,7 +12,6 @@ body {
 	margin-bottom: 20px;
 }
 
-
 .matrix_2 {
 	display: grid;
 	grid-template-rows: repeat(3,100px);
@@ -30,7 +29,6 @@ body {
 	grid-gap: 1vw;
 	margin-bottom: 20px;
 }
-
 
 .item_matrix_1 {
 	background: rosybrown;
@@ -50,5 +48,4 @@ body {
 	text-align: center;
 	vertical-align: middle;
 	color: white;
-
 }
